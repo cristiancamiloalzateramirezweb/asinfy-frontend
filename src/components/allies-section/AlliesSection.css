@@ -1,0 +1,25 @@
+.allies-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #FF7A42;
+}
+
+.allies-section .allies-content {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 90px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.allies-section .allies-content a {
+    margin: 0px 30px;
+    display: inline-block;
+}
+
+.allies-section .allies-content a img {
+    max-width: 100%;
+    height: auto;
+}

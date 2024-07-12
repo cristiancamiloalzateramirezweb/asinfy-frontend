@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.reason-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.reason-section .reason-content {
+    width: 75%;
+    margin: auto;
+    height: auto;
+    padding: 90px 0px 150px 0px;
+}
+
+.reason-section .reason-content .title-decor {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    color: #EA581B;
+    font-weight: 600;
+}
+
+.reason-section .reason-content h3{
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    color: #313131;
+    font-weight: 600;
+}
+
+.reason-section .reason-content .card-list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+}
+
+.reason-section .reason-content .card-list .card-item {
+   width: 450px;
+   height: 450px;
+   padding: 30px;
+   background-color: #F9FAFC;
+   box-shadow: 0 0 8px #EEEEEE;
+   border-radius: 16px;
+}
+
+.reason-section .reason-content .card-list .card-item img {
+    display: block;
+    margin: 0px auto 30px;
+}
+
+.reason-section .reason-content .card-list .card-item h4 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    color: #313131;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+}
+
+.reason-section .reason-content .card-list .card-item .text {
+    color: #616161;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    display: block;
+    margin-top: 10px;
+}
+
+.reason-section .square04 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.reason-section .square05 {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    z-index: 2;
+}
