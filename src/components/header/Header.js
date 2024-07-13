@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import LogoTipoAsinfy from "../../assets/images/logotipo.svg";
 
-export const Header = () => {
+export const Header = ({ activo, scrollToSection }) => {  
   return (
     <>
       <header>
@@ -17,35 +17,35 @@ export const Header = () => {
               <div className="navbar">
                 <ul>
                   <li>
-                    <a href="#inicio">Inicio</a>
+                    <button onClick={() => scrollToSection('componente1')} className={activo === 'componente1' ? 'active' : ''}>Inicio</button>
                   </li>
                   <li>
-                    <a href="#que-es">¿Qué es?</a>
+                    <button onClick={() => scrollToSection('componente2')} className={activo === 'componente2' ? 'active' : ''}>¿Qué es?</button>
                   </li>
                   <li>
-                    <a href="#eligenos">Elígenos</a>
+                    <button onClick={() => scrollToSection('componente3')} className={activo === 'componente3' ? 'active' : ''}>Elígenos</button>
                   </li>
                   <li>
-                    <a href="#productos">Productos</a>
+                    <button onClick={() => scrollToSection('componente4')} className={activo === 'componente4' ? 'active' : ''}>Productos</button>
                   </li>
                   <li>
-                    <a href="#procesos">Procesos</a>
+                    <button onClick={() => scrollToSection('componente5')} className={activo === 'componente5' ? 'active' : ''}>Procesos</button>
                   </li>
                   <li>
-                    <a href="#descubre">Descubre</a>
+                    <button onClick={() => scrollToSection('componente6')} className={activo === 'componente6' ? 'active' : ''}>Descubre</button>
                   </li>
                 </ul>
               </div>
-              {/* <div className="navbar-buthrefn">
+              <div className="navbar-button">
                 <ul>
                   <li>
                     <a href="/registrate">Regístrate</a>
                   </li>
                   <li>
-                    <a href="/accede" className="link-buthrefn">Accede Gratis</a>
+                    <a href="/accede" className="link-button">Accede Gratis</a>
                   </li>
                 </ul>
-              </div> */}
+              </div>
             </nav>
           </div>
         </div>

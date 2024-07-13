@@ -10,7 +10,7 @@
 }
 
 .header-main .nav-main {
-    width: 80%;
+    width: 85%;
     height: inherit;
     margin: auto;
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .header-main .nav-main .brand-container {
-    width: 25%;
+    width: 20%;
 }
 
 .header-main .nav-main .brand-container img {
@@ -28,15 +28,15 @@
 }
 
 .header-main .nav-main .navbar-container {
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
 }
 
 .header-main .nav-main .navbar-container .navbar {
-    width: 70%;
+    width: 66%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .header-main .nav-main .navbar-container .navbar ul {
@@ -44,25 +44,28 @@
 }
 
 .header-main .nav-main .navbar-container .navbar ul li {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 20px;
     list-style: none;
 }
 
-.header-main .nav-main .navbar-container .navbar ul li a {
+.header-main .nav-main .navbar-container .navbar ul li button {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 14px;
+    background: none;
+    outline: none;
+    border: none;
 }
 
-.header-main .nav-main .navbar-container .navbar ul li a:hover,
-.header-main .nav-main .navbar-container .navbar ul li a.active {
+.header-main .nav-main .navbar-container .navbar ul li button:hover,
+.header-main .nav-main .navbar-container .navbar ul li button.active {
     color: #EA581B;
 }
 
 .header-main .nav-main .navbar-container .navbar-button {
-    width: 30%;
+    width: 34%;
     display: flex;
     justify-content: flex-end;
 }
@@ -72,7 +75,7 @@
 }
 
 .header-main .nav-main .navbar-container .navbar-button ul li {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 20px;
     list-style: none;
 }
 
@@ -81,21 +84,21 @@
     color: #EA581B;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .header-main .nav-main .navbar-container .navbar-button ul li a:hover {
-    color: #000000;
+    text-decoration: underline;
 }
 
 .header-main .nav-main .navbar-container .navbar-button ul li a.link-button {
     color: #ffffff;
     background-color: #EA581B;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .header-main .nav-main .navbar-container .navbar-button ul li a.link-button:hover {
-    color: #000000;
+    text-decoration: none;
 }

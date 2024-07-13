@@ -1,10 +1,10 @@
 import React from "react";
-import "./StoreSection.css";
+import "./DiscoverSection.css";
 import Check from "../../assets/images/check.svg";
 import Store from "../../assets/images/img-store.svg";
 import Square10 from "../../assets/images/square10.svg";
 
-export const StoreSection = () => {
+export const DiscoverSection = () => {
   return (
     <>
       <section className="store-section" id="descubre">

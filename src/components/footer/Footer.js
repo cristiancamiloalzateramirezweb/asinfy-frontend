@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import LogoTipoAsinfy from "../../assets/images/logotipo.svg";
-import up from "../../assets/images/up-arrow.svg";
+import UpArrow from "../../assets/images/up-arrow.svg";
 
 export const Footer = () => {
   const yearActual = new Date().getFullYear();
@@ -37,27 +37,27 @@ export const Footer = () => {
             </a>
             <ul>
               <li>
-                <a href="#">
+                <a href="/">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <i class="fa-brands fa-x-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <i class="fa-brands fa-youtube"></i>
                 </a>
               </li>
@@ -68,13 +68,13 @@ export const Footer = () => {
               <h5>Legal</h5>
               <ul>
                 <li>
-                  <a href="#">Aviso Legal</a>
+                  <a href="/">Aviso Legal</a>
                 </li>
                 <li>
-                  <a href="#">Política de Privacidad</a>
+                  <a href="/">Política de Privacidad</a>
                 </li>
                 <li>
-                  <a href="#">Terminos y Condiciones</a>
+                  <a href="/">Terminos y Condiciones</a>
                 </li>
               </ul>
             </div>
@@ -82,10 +82,10 @@ export const Footer = () => {
               <h5>Asinfy</h5>
               <ul>
                 <li>
-                  <a href="#">Sobre Nosotros</a>
+                  <a href="/">Sobre Nosotros</a>
                 </li>
                 <li>
-                  <a href="#">Conocenos</a>
+                  <a href="/">Conocenos</a>
                 </li>
               </ul>
             </div>
@@ -93,10 +93,10 @@ export const Footer = () => {
               <h5>Soporte</h5>
               <ul>
                 <li>
-                  <a href="#">Ayuda</a>
+                  <a href="/">Ayuda</a>
                 </li>
                 <li>
-                  <a href="#">Contáctanos</a>
+                  <a href="/">Contáctanos</a>
                 </li>
               </ul>
             </div>
@@ -112,7 +112,7 @@ export const Footer = () => {
           className={`container-fixed ${showButton ? "show" : ""}`}
           onClick={paraArriba}
         >
-          <img src={up} alt="Asinfy"></img>
+          <img src={UpArrow} alt="Asinfy"></img>
         </div>
       </footer>
     </>
