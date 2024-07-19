@@ -20,8 +20,8 @@ export const ProcessSection = () => {
     <>
       <section className="process-section" id="procesos">
         <div className="process-content">
-          <span className="title-decor">Nuestro Procesos</span>
-          <h3>Los procesos de Asinfy</h3>
+          <span className="title-decor">Nuestros Procesos</span>
+          <h3>Los procesos de Asincode</h3>
           <div className="process-container">
             <div className="process-list">
               {filteredProcesses.map((process) => (
@@ -49,8 +49,8 @@ export const ProcessSection = () => {
             )}
           </div>
         </div>
-        <img src={Square08} alt="Asinfy" className="square08"></img>
-        <img src={Square09} alt="Asinfy" className="square09"></img>
+        <img src={Square08} alt="Asincode" className="square08"></img>
+        <img src={Square09} alt="Asincode" className="square09"></img>
       </section>
     </>
   );

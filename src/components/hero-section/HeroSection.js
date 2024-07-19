@@ -10,7 +10,7 @@ export const HeroSection = () => {
       <section className="hero-section" id="inicio">
         <div className="hero-content">
           <div className="hero-image">
-            <img src={IsoTipoAsinfy} alt="Asinfy"></img>
+            <img src={IsoTipoAsinfy} alt="Asincode"></img>
           </div>
           <div className="hero-text">
             <h1>Soluciones Tecnológicas que impulsan tu negocio</h1>
@@ -19,8 +19,8 @@ export const HeroSection = () => {
             </span>
           </div>
         </div>
-        <img src={Square01} alt="" className="square01"></img>
-        <img src={Square02} alt="" className="square02"></img>
+        <img src={Square01} alt="Asincode" className="square01"></img>
+        <img src={Square02} alt="Asincode" className="square02"></img>
       </section>
     </>
   );

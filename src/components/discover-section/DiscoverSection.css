@@ -1,35 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .store-section {
-    width: 100%;
-    height: auto;
-    position: relative;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .store-section .store-content {
-    width: 75%;
-    margin: auto;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 180px 0px 120px 0px;
+  width: 75%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0px;
 }
 
 .store-section .store-content .image-container {
-    width: 50%;
+  width: 50%;
 }
 
 .store-section .store-content .image-container img {
-    display: block;
+  display: block;
+  max-width: 100%;
 }
 
 .store-section .store-content .text-container {
-    width: 50%;
-    padding-left: 100px;
+  width: 50%;
+  padding-left: 100px;
 }
 
 .store-section .store-content .text-container .text-btn {
-    background-color: #EA581B;
+  background-color: #ea581b;
+  color: #ffffff;
+  font-weight: bolder;
+  padding: 5px 20px;
+  display: block;
+  width: max-content;
+  border-radius: 8px;
+  margin: 60px 0px 30px 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.store-section .store-content .text-container h3 {
+  font-size: 40px;
+  color: #313131;
+  font-weight: 600;
+}
+
+.store-section .store-content .text-container ul {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.store-section .store-content .text-container ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  list-style: none;
+  color: #616161;
+}
+
+.store-section .square10 {
+  display: block;
+  position: absolute;
+  top: -90px;
+  right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .store-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .store-section .store-content {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 60px 0px;
+  }
+
+  .store-section .store-content .image-container {
+    width: 100%;
+    padding-top: 45px;
+  }
+
+  .store-section .store-content .image-container img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .store-section .store-content .text-container {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .store-section .store-content .text-container .text-btn {
+    background-color: #ea581b;
     color: #ffffff;
     font-weight: bolder;
     padding: 5px 20px;
@@ -37,31 +105,95 @@
     width: max-content;
     border-radius: 8px;
     margin: 60px 0px 30px 0px;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
-}
+  }
 
-.store-section .store-content .text-container h3 {
-    font-size: 40px;
+  .store-section .store-content .text-container h3 {
+    font-size: 28px;
+    line-height: 34px;
     color: #313131;
     font-weight: 600;
+  }
+
+  .store-section .square10 {
+    display: none;
+  }
 }
 
-.store-section .store-content .text-container ul {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .store-section {
     width: 100%;
-    margin-top: 30px;
-}
+    height: auto;
+    position: relative;
+  }
 
-.store-section .store-content .text-container ul li {
-    font-size: 16px;
-    margin-bottom: 15px;
-    list-style: none;
-    color: #616161;
-}
+  .store-section .store-content {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 60px 0px;
+  }
 
-.store-section .square10 {
+  .store-section .store-content .image-container {
+    width: 100%;
+    padding-top: 45px;
+  }
+
+  .store-section .store-content .image-container img {
     display: block;
-    position: absolute;
-    top: -90px;
-    right: 0;
+    max-width: 100%;
+  }
+
+  .store-section .store-content .text-container {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .store-section .store-content .text-container .text-btn {
+    background-color: #ea581b;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 5px 20px;
+    display: block;
+    width: max-content;
+    border-radius: 8px;
+    margin: 60px 0px 30px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .store-section .store-content .text-container h3 {
+    font-size: 28px;
+    line-height: 34px;
+    color: #313131;
+    font-weight: 600;
+  }
+
+  .store-section .square10 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .store-section .store-content {
+    width: 80%;
+  }
+
+  .store-section .store-content .image-container {
+    width: 50%;
+  }
+  .store-section .store-content .text-container {
+    width: 50%;
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .store-section .store-content {
+    width: 75%;
+  }
+  .store-section .store-content .image-container {
+    width: 50%;
+  }
 }

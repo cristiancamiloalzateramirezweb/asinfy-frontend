@@ -10,10 +10,10 @@ export const DiscoverSection = () => {
       <section className="store-section" id="descubre">
         <div className="store-content">
           <div className="image-container">
-            <img src={Store} alt="¿Qué es Asinfy?"></img>
+            <img src={Store} alt="¿Qué es Asincode?"></img>
           </div>
           <div className="text-container">
-            <span className="text-btn">Descubre Asinfy</span>
+            <span className="text-btn">Descubre Asincode</span>
             <h3>Potenciando tu negocio</h3>
             <ul>
               <li>
@@ -35,7 +35,7 @@ export const DiscoverSection = () => {
             </ul>
           </div>
         </div>
-        <img src={Square10} alt="Asinfy" className="square10"></img>
+        <img src={Square10} alt="Asincode" className="square10"></img>
       </section>
     </>
   );

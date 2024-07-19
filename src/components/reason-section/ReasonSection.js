@@ -10,7 +10,7 @@ export const ReasonSection = () => {
       <section className="reason-section" id="eligenos">
         <div className="reason-content">
           <span className="title-decor">¿Porqué escogernos?</span>
-          <h3>Tres razones para elegir Asinfy</h3>
+          <h3>Razones para elegir Asincode</h3>
           <div className="card-list">
             {reasons.map((reason) => {
               return (
@@ -23,8 +23,8 @@ export const ReasonSection = () => {
             })}
           </div>
         </div>
-        <img src={Square04} alt="Asinfy" className="square04"></img>
-        <img src={Square05} alt="Asinfy" className="square05"></img>
+        <img src={Square04} alt="Asincode" className="square04"></img>
+        <img src={Square05} alt="Asincode" className="square05"></img>
       </section>
     </>
   );

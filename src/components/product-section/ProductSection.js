@@ -9,8 +9,8 @@ export const ProductSection = () => {
     <>
       <section className="product-section" id="productos">
         <div className="product-content">
-          <span className="title-decor">Texto aqui!!!</span>
-          <h3>Nuestros Productos</h3>
+          <span className="title-decor">Nuestros Productos</span>
+          <h3>Los productos de Asincode</h3>
           <div className="product-list">
             {products.map((product) => {
               return (
@@ -29,8 +29,8 @@ export const ProductSection = () => {
             })}
           </div>
         </div>
-        <img src={Square06} alt="Asinfy" className="square06"></img>
-        <img src={Square07} alt="Asinfy" className="square07"></img>
+        <img src={Square06} alt="Asincode" className="square06"></img>
+        <img src={Square07} alt="Asincode" className="square07"></img>
       </section>
     </>
   );

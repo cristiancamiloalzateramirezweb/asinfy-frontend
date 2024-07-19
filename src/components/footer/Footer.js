@@ -33,7 +33,7 @@ export const Footer = () => {
         <div className="footer-main">
           <div className="brand-container">
             <a href="/">
-              <img src={LogoTipoAsinfy} alt="Asinfy"></img>
+              <img src={LogoTipoAsinfy} alt="Asincode"></img>
             </a>
             <ul>
               <li>
@@ -79,7 +79,7 @@ export const Footer = () => {
               </ul>
             </div>
             <div class="colspan">
-              <h5>Asinfy</h5>
+              <h5>Asincode</h5>
               <ul>
                 <li>
                   <a href="/">Sobre Nosotros</a>
@@ -105,14 +105,14 @@ export const Footer = () => {
         <div className="footer-below">
           <p>
             Copyright &copy; 2024{yearActual !== 2024 ? `-${yearActual}` : ""}{" "}
-            Asinfy. Desarrollado por <strong>Asinfy</strong>, marca de AndarT.
+            Asincode. Desarrollado por <strong>Asincode</strong> marca de AndarT.
           </p>
         </div>
         <div
           className={`container-fixed ${showButton ? "show" : ""}`}
           onClick={paraArriba}
         >
-          <img src={UpArrow} alt="Asinfy"></img>
+          <img src={UpArrow} alt="Asincode"></img>
         </div>
       </footer>
     </>

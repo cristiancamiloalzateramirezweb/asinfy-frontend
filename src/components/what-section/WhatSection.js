@@ -9,7 +9,7 @@ export const WhatSection = () => {
       <section className="what-section" id="que-es">
         <div className="what-content">
           <div className="text-container">
-            <h2>¿Qué es Asinfy?</h2>
+            <h2>¿Qué es Asincode?</h2>
             <p className="para">
               Asinfy es tu solución integral para simplificar la contabilidad y
               la facturación en tu empresa. Automatiza procesos, genera facturas
@@ -20,10 +20,10 @@ export const WhatSection = () => {
             <a href="/" className="btn-cta">¡Comienza Ahora!</a>
           </div>
           <div className="image-container">
-            <img src={WhatAsinfy} alt="¿Qué es Asinfy?"></img>
+            <img src={WhatAsinfy} alt="¿Qué es Asincode?"></img>
           </div>
         </div>
-        <img src={Square03} alt="" className="square03"></img>
+        <img src={Square03} alt="Asincode" className="square03"></img>
       </section>
     </>
   );

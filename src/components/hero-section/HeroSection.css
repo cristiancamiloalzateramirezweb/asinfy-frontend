@@ -15,7 +15,7 @@
 }
 
 .hero-section .hero-content .hero-image {
-  width: 37%;
+  width: 35%;
 }
 
 .hero-section .hero-content .hero-image img {
@@ -25,7 +25,7 @@
 }
 
 .hero-section .hero-content .hero-text {
-  width: 63%;
+  width: 65%;
   padding: 0 10% 0 0;
 }
 
@@ -52,4 +52,117 @@
   position: absolute;
   bottom: -125px;
   right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .hero-section .hero-content {
+    width: 100%;
+    height: auto !important;
+    flex-wrap: wrap;
+  }
+
+  .hero-section .hero-content .hero-image {
+    width: 100%;
+    padding: 100px 0px 0px 0px;
+  }
+
+  .hero-section .hero-content .hero-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-section .hero-content .hero-text {
+    width: 100%;
+    height: auto;
+    padding: 30px 5%;
+  }
+
+  .hero-section .hero-content .hero-text h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .hero-section .hero-content .hero-text .para {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .hero-section .square01 {
+    display: none;
+  }
+
+  .hero-section .square02 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .hero-section .hero-content {
+    width: 100%;
+    height: auto;
+    padding: 120px 0px 0px 0px;
+  }
+
+  .hero-section .hero-content .hero-image {
+    width: 37.5%;
+  }
+
+  .hero-section .hero-content .hero-text {
+    width: 62.5%;
+    padding: 0 5% 0 0;
+  }
+
+  .hero-section .hero-content .hero-text h1 {
+    font-size: 43px;
+    line-height: 47px;
+    margin-top: 30px;
+  }
+  
+  .hero-section .hero-content .hero-text .para {
+    display: block;
+    margin-top: 45px;
+    font-size: 18px;
+  }
+
+  .hero-section .square01 {
+    display: none;
+  }
+
+  .hero-section .square02 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero-section .hero-content .hero-text h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .hero-section .hero-content .hero-text .para {
+    display: block;
+    margin-top: 45px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .hero-section .hero-content .hero-text h1 {
+    font-size: 90px;
+    line-height: 90px;
+  }
+
+  .hero-section .hero-content .hero-text .para {
+    display: block;
+    margin-top: 45px;
+    font-size: 36px;
+  }
 }
