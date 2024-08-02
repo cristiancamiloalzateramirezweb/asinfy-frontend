@@ -1,20 +1,20 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import "./ProductSection.css";
-import { products } from "../../data/products";
+import "./ServiceSection.css";
+import { services } from "../../data/services";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const ProductSection = () => {
-  let sliderRefProduct = useRef(null);
+export const ServiceSection = () => {
+  let sliderRefService = useRef(null);
 
   const next = () => {
-    sliderRefProduct.slickNext();
+    sliderRefService.slickNext();
   };
 
   const previous = () => {
-    sliderRefProduct.slickPrev();
+    sliderRefService.slickPrev();
   };
 
   const settings = {
@@ -25,7 +25,7 @@ export const ProductSection = () => {
     autoplay: true,
     initialSlide: 1,
     arrows: false,
-    className: "product-list",
+    className: "service-list",
     responsive: [
       {
         breakpoint: 1700,
@@ -60,33 +60,33 @@ export const ProductSection = () => {
 
   return (
     <>
-      <section className="product-section" id="productos">
-        <div className="product-content">
-          <h3>Nuestros productos</h3>
+      <section className="service-section" id="servicios">
+        <div className="service-content">
+          <h3>Nuestros servicios</h3>
           <button className="slick-btn prev-btn" onClick={previous}>
             <i className="fa-solid fa-arrow-left"></i>
           </button>
           <Slider
             ref={(slider) => {
-              sliderRefProduct = slider;
+              sliderRefService = slider;
             }}
             {...settings}
-            className="product-list"
+            className="service-list"
           >
-            {products.map((product) => {
+            {services.map((service) => {
               return (
-                <div className="col-product">
-                  <div className="product-item" key={product.id}>
-                    {product.status === "Activo" ? (
-                      <Link className="card" /* to={`/${product.id}`} */>
+                <div className="col-service">
+                  <div className="service-item" key={service.id}>
+                    {service.status === "Activo" ? (
+                      <Link className="card" /* to={`/${service.id}`} */>
                         <div className="card-icon">
                           <span className="icon">
-                            <i className={product.icon}></i>
+                            <i className={service.icon}></i>
                           </span>
                         </div>
                         <div className="card-text">
-                          <h4>{product.title}</h4>
-                          <p>{product.text}</p>
+                          <h4>{service.title}</h4>
+                          <p>{service.text}</p>
                         </div>
                       </Link>
                     ) : (
@@ -94,12 +94,12 @@ export const ProductSection = () => {
                         <div className="enabled">Próximamente</div>
                         <div className="card-icon">
                           <span className="icon">
-                            <i className={product.icon}></i>
+                            <i className={service.icon}></i>
                           </span>
                         </div>
                         <div className="card-text">
-                          <h4>{product.title}</h4>
-                          <p>{product.text}</p>
+                          <h4>{service.title}</h4>
+                          <p>{service.text}</p>
                         </div>
                       </div>
                     )}

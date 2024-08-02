@@ -36,7 +36,7 @@ export const Header = ({ activo, scrollToSection }) => {
                       onClick={() => scrollToSection("componente2")}
                       className={activo === "componente2" ? "active" : ""}
                     >
-                      ¿Qué es?
+                      Descúbrenos
                     </button>
                   </li>
                   <li>
@@ -60,7 +60,7 @@ export const Header = ({ activo, scrollToSection }) => {
                       onClick={() => scrollToSection("componente5")}
                       className={activo === "componente5" ? "active" : ""}
                     >
-                      Procesos
+                      Servicios
                     </button>
                   </li>
                   <li>
@@ -68,13 +68,13 @@ export const Header = ({ activo, scrollToSection }) => {
                       onClick={() => scrollToSection("componente6")}
                       className={activo === "componente6" ? "active" : ""}
                     >
-                      Descubre
+                      Procesos
                     </button>
                   </li>
                   <li>
-                    <NavLink to="/contactanos" className="link-button">
-                      Contáctanos
-                    </NavLink>
+                  <NavLink /* to="/contactanos" */ className="link-button">
+                    Contáctanos
+                  </NavLink>
                   </li>
                 </ul>
               </div>
@@ -111,7 +111,7 @@ export const Header = ({ activo, scrollToSection }) => {
                     onClick={() => scrollToSection("componente2")}
                     className={activo === "componente2" ? "active" : ""}
                   >
-                    ¿Qué es?
+                    Descúbrenos
                   </button>
                 </li>
                 <li>
@@ -131,23 +131,23 @@ export const Header = ({ activo, scrollToSection }) => {
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("componente5")}
-                    className={activo === "componente5" ? "active" : ""}
-                  >
-                    Procesos
-                  </button>
-                </li>
+                    <button
+                      onClick={() => scrollToSection("componente5")}
+                      className={activo === "componente5" ? "active" : ""}
+                    >
+                      Servicios
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      onClick={() => scrollToSection("componente6")}
+                      className={activo === "componente6" ? "active" : ""}
+                    >
+                      Procesos
+                    </button>
+                  </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("componente6")}
-                    className={activo === "componente6" ? "active" : ""}
-                  >
-                    Descubre
-                  </button>
-                </li>
-                <li>
-                  <NavLink to="/contactanos" className="link-button">
+                  <NavLink /* to="/contactanos" */ className="link-button">
                     Contáctanos
                   </NavLink>
                 </li>

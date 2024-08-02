@@ -3,14 +3,15 @@ import { HeroSection } from "../../components/hero-section/HeroSection";
 import { WhatSection } from "../../components/what-section/WhatSection";
 import { ReasonSection } from "../../components/reason-section/ReasonSection";
 import { ProductSection } from "../../components/product-section/ProductSection";
+import { ServiceSection } from "../../components/service-section/ServiceSection";
 import { ProcessSection } from "../../components/process-section/ProcessSection";
-import { DiscoverSection } from "../../components/discover-section/DiscoverSection";
-import { AlliesSection } from "../../components/allies-section/AlliesSection";
 import { Header } from "../../components/header/Header";
 import { Footer } from "../../components/footer/Footer";
+import { Loader } from "../../components/loader/Loader";
 
 export const Home = () => {
-  const [activo, setActivo] = useState("componente1");
+  const [loading, setLoading] = useState(true);
+  const [activo, setActivo] = useState("componente1"); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +21,7 @@ export const Home = () => {
         document.getElementById("componente3"),
         document.getElementById("componente4"),
         document.getElementById("componente5"),
-        document.getElementById("componente6"),
+        document.getElementById("componente6")
       ];
 
       const scrollPosition = window.scrollY;
@@ -54,6 +55,17 @@ export const Home = () => {
     }
   };
 
+  useEffect(() => {
+    const loadContent = () => {
+      setLoading(false);
+    };
+    setTimeout(loadContent, 3000);
+  }, []);
+
+  if (loading) {
+    return <Loader></Loader>;
+  }
+
   return (
     <>
       <Header activo={activo} scrollToSection={scrollToSection}></Header>
@@ -70,12 +82,11 @@ export const Home = () => {
         <ProductSection></ProductSection>
       </div>
       <div id="componente5">
-        <ProcessSection></ProcessSection>
+        <ServiceSection></ServiceSection>
       </div>
       <div id="componente6">
-        <DiscoverSection></DiscoverSection>
+        <ProcessSection></ProcessSection>
       </div>
-      <AlliesSection></AlliesSection>
       <Footer></Footer>
     </>
   );

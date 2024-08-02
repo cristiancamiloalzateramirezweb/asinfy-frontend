@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import LogoTipoAsinfy from "../../assets/images/logotipo.svg";
 import UpArrow from "../../assets/images/up-arrow.svg";
@@ -20,7 +21,7 @@ export const Footer = () => {
     }
   };
 
-  const paraArriba = () => {
+  const goTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -67,36 +68,51 @@ export const Footer = () => {
             <div class="colspan">
               <h5>Legal</h5>
               <ul>
-                <li>
-                  <a href="/">Aviso Legal</a>
+                {/* <li>
+                  <NavLink to="/legal">Aviso Legal</NavLink>
                 </li>
                 <li>
-                  <a href="/">Política de Privacidad</a>
+                  <NavLink to="/legal">Política de Privacidad</NavLink>
                 </li>
                 <li>
-                  <a href="/">Terminos y Condiciones</a>
-                </li>
-              </ul>
-            </div>
-            <div class="colspan">
-              <h5>Asincode</h5>
-              <ul>
+                  <NavLink to="/legal">Terminos y Condiciones</NavLink>
+                </li> */}
                 <li>
-                  <a href="/">Sobre Nosotros</a>
+                  Aviso Legal
                 </li>
                 <li>
-                  <a href="/">Conocenos</a>
+                  Política de Privacidad
+                </li>
+                <li>
+                  Terminos y Condiciones
                 </li>
               </ul>
             </div>
             <div class="colspan">
-              <h5>Soporte</h5>
+              <h5>Quiénes Somos</h5>
               <ul>
+                {/* <li>
+                  <NavLink to="/conocenos">Conocenos</NavLink>
+                </li> */}
                 <li>
-                  <a href="/">Ayuda</a>
+                  Conocenos
+                </li>
+              </ul>
+            </div>
+            <div class="colspan">
+              <h5>Servicio al cliente</h5>
+              <ul>
+                {/* <li>
+                  <NavLink to="/ayuda">Ayuda</NavLink>
                 </li>
                 <li>
-                  <a href="/">Contáctanos</a>
+                  <NavLink to="/contactanos">Contáctanos</NavLink>
+                </li> */}
+                <li>
+                  Ayuda
+                </li>
+                <li>
+                  Contáctanos
                 </li>
               </ul>
             </div>
@@ -105,12 +121,13 @@ export const Footer = () => {
         <div className="footer-below">
           <p>
             Copyright &copy; 2024{yearActual !== 2024 ? `-${yearActual}` : ""}{" "}
-            Asincode. Desarrollado por <strong>Asincode</strong> marca de AndarT.
+            Asincode. Desarrollado por <strong>Asincode&reg;</strong> marca de{" "}
+            {/* <NavLink to="/legal">AndarT SAS.</NavLink> */}AndarT SAS.
           </p>
         </div>
         <div
           className={`container-fixed ${showButton ? "show" : ""}`}
-          onClick={paraArriba}
+          onClick={goTop}
         >
           <img src={UpArrow} alt="Asincode"></img>
         </div>

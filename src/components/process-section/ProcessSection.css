@@ -10,7 +10,7 @@
   width: 75%;
   margin: auto;
   height: auto;
-  padding: 120px 0px;
+  padding: 120px 0px 180px 0px;
 }
 
 .process-section .process-content .title-decor {
@@ -24,7 +24,7 @@
 .process-section .process-content h3 {
   text-align: center;
   display: block;
-  font-size: 40px;
+  font-size: 36px;
   color: #313131;
   font-weight: 600;
 }
@@ -33,18 +33,15 @@
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .process-section .process-content .process-container .process-list {
-  width: 30%;
+  width: 35%;
   height: auto;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-list
-  .process-item {
+.process-section .process-content .process-container .process-list .process-item {
   width: 100%;
   height: auto;
   border-right: 3px solid #d9d9d9;
@@ -52,30 +49,16 @@
   cursor: pointer;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-list
-  .process-item.selected {
+.process-section .process-content .process-container .process-list .process-item.selected {
   border-right: 3px solid #ea581b;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-list
-  .process-item.selected
-  .icon {
+.process-section .process-content .process-container .process-list .process-item.selected .icon {
   background-color: #ea581b;
   color: #ffffff;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-list
-  .process-item
-  .icon {
+.process-section .process-content .process-container .process-list .process-item .icon {
   width: 70px;
   height: 70px;
   background-color: #d9d9d9;
@@ -86,88 +69,46 @@
   line-height: 70px;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-list
-  .process-item
-  .text {
+.process-section .process-content .process-container .process-list .process-item .text {
   color: #616161;
   margin-left: 45px;
   font-weight: 500;
   font-size: 24px;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-list
-  .process-item.selected
-  .text {
+.process-section .process-content .process-container .process-list .process-item.selected .text {
   color: #ea581b;
 }
 
 .process-section .process-content .process-container .process-details {
-  width: 70%;
+  width: 65%;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-details
-  .text-details {
-  width: 60%;
-  padding: 0px 70px 0px 90px;
+.process-section .process-content .process-container .process-details .text-details {
+  width: 65%;
+  padding: 0px 75px;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-details
-  .image-details {
-  width: 40%;
+.process-section .process-content .process-container .process-details .image-details {
+  width: 35%;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-details
-  .text-details
-  p {
+.process-section .process-content .process-container .process-details .text-details p {
   font-size: 20px;
   line-height: 24px;
   color: #616161;
   font-weight: 500;
 }
 
-.process-section
-  .process-content
-  .process-container
-  .process-details
-  .image-details
-  img {
+.process-section .process-content .process-container .process-details .image-details img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.process-section .square08 {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.process-section .square09 {
-  display: block;
-  position: absolute;
-  bottom: -60px;
-  right: 0;
-  z-index: 2;
+  margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -212,11 +153,7 @@
     margin-bottom: 60px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item {
+  .process-section .process-content .process-container .process-list .process-item {
     width: 100%;
     height: auto;
     border-right: 3px solid #d9d9d9;
@@ -224,30 +161,16 @@
     cursor: pointer;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected {
+  .process-section .process-content .process-container .process-list .process-item.selected {
     border-right: 3px solid #ea581b;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .icon {
+  .process-section .process-content .process-container .process-list .process-item.selected .icon {
     background-color: #ea581b;
     color: #ffffff;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .icon {
+  .process-section .process-content .process-container .process-list .process-item .icon {
     width: 60px;
     height: 60px;
     background-color: #d9d9d9;
@@ -258,24 +181,14 @@
     line-height: 60px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .text {
+  .process-section .process-content .process-container .process-list .process-item .text {
     color: #616161;
     margin-left: 45px;
     font-weight: 500;
     font-size: 20px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .text {
+  .process-section .process-content .process-container .process-list .process-item.selected .text {
     color: #ea581b;
   }
 
@@ -285,52 +198,26 @@
     flex-direction: column-reverse;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details {
+  .process-section .process-content .process-container .process-details .text-details {
     width: 100%;
     padding: 60px 0px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details {
+  .process-section .process-content .process-container .process-details .image-details {
     width: 100%;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details
-    p {
-    font-size: 20px;
+  .process-section .process-content .process-container .process-details .text-details p {
+    font-size: 19px;
     line-height: 24px;
     color: #616161;
     font-weight: 500;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details
-    img {
+  .process-section .process-content .process-container .process-details .image-details img {
     display: block;
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
-  }
-
-  .process-section .square08 {
-    display: none;
-  }
-
-  .process-section .square09 {
-    display: none;
   }
 }
 
@@ -376,11 +263,7 @@
     margin-bottom: 60px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item {
+  .process-section .process-content .process-container .process-list .process-item {
     width: 100%;
     height: auto;
     border-right: 3px solid #d9d9d9;
@@ -388,30 +271,16 @@
     cursor: pointer;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected {
+  .process-section .process-content .process-container .process-list .process-item.selected {
     border-right: 3px solid #ea581b;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .icon {
+  .process-section .process-content .process-container .process-list .process-item.selected .icon {
     background-color: #ea581b;
     color: #ffffff;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .icon {
+  .process-section .process-content .process-container .process-list .process-item .icon {
     width: 60px;
     height: 60px;
     background-color: #d9d9d9;
@@ -422,24 +291,14 @@
     line-height: 60px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .text {
+  .process-section .process-content .process-container .process-list .process-item .text {
     color: #616161;
     margin-left: 45px;
     font-weight: 500;
     font-size: 20px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .text {
+  .process-section .process-content .process-container .process-list .process-item.selected .text {
     color: #ea581b;
   }
 
@@ -449,397 +308,48 @@
     flex-direction: column-reverse;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details {
+  .process-section .process-content .process-container .process-details .text-details {
     width: 100%;
     padding: 45px 0px;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details {
+  .process-section .process-content .process-container .process-details .image-details {
     width: 100%;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details
-    p {
+  .process-section .process-content .process-container .process-details .text-details p {
     font-size: 20px;
     line-height: 24px;
     color: #616161;
     font-weight: 500;
   }
 
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details
-    img {
+  .process-section .process-content .process-container .process-details .image-details img {
     display: block;
-    max-width: 60% !important;
+    max-width: 50% !important;
     height: auto;
     margin: auto;
-  }
-
-  .process-section .square08 {
-    display: none;
-  }
-
-  .process-section .square09 {
-    display: none;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .process-section {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
   .process-section .process-content {
     width: 80%;
-    margin: auto;
-    height: auto;
-    padding: 120px 0px;
   }
 
-  .process-section .process-content .title-decor {
-    text-align: center;
-    display: block;
-    font-size: 20px;
-    color: #ea581b;
-    font-weight: 600;
-  }
-
-  .process-section .process-content h3 {
-    text-align: center;
-    display: block;
-    font-size: 40px;
-    color: #313131;
-    font-weight: 600;
-  }
-
-  .process-section .process-content .process-container {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .process-section .process-content .process-container .process-list {
-    width: 30%;
-    height: auto;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item {
-    width: 100%;
-    height: auto;
-    border-right: 3px solid #d9d9d9;
-    padding: 15px 0px;
-    cursor: pointer;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected {
-    border-right: 3px solid #ea581b;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .icon {
-    background-color: #ea581b;
-    color: #ffffff;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .icon {
-    width: 70px;
-    height: 70px;
-    background-color: #d9d9d9;
-    border-radius: 100%;
-    font-size: 30px;
-    display: inline-block;
-    text-align: center;
-    line-height: 70px;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .text {
-    color: #616161;
-    margin-left: 40px;
-    font-weight: 500;
-    font-size: 24px;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .text {
-    color: #ea581b;
-  }
-
-  .process-section .process-content .process-container .process-details {
-    width: 70%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details {
-    width: 65%;
-    padding: 0px 30px 0px 60px;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details {
-    width: 35%;
-    padding: 0px 25px 0px 0px;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details
-    p {
-    font-size: 20px;
-    line-height: 24px;
-    color: #616161;
-    font-weight: 500;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details
-    img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .process-section .square08 {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .process-section .square09 {
-    display: block;
-    position: absolute;
-    bottom: -60px;
-    right: 0;
-    z-index: 2;
+  .process-section .process-content .process-container .process-details .text-details p {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .process-section {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
   .process-section .process-content {
     width: 75%;
-    margin: auto;
-    height: auto;
-    padding: 120px 0px;
   }
 
-  .process-section .process-content .title-decor {
-    text-align: center;
-    display: block;
+  .process-section .process-content .process-container .process-details .text-details p {
     font-size: 20px;
-    color: #ea581b;
-    font-weight: 600;
-  }
-
-  .process-section .process-content h3 {
-    text-align: center;
-    display: block;
-    font-size: 40px;
-    color: #313131;
-    font-weight: 600;
-  }
-
-  .process-section .process-content .process-container {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .process-section .process-content .process-container .process-list {
-    width: 30%;
-    height: auto;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item {
-    width: 100%;
-    height: auto;
-    border-right: 3px solid #d9d9d9;
-    padding: 15px 0px;
-    cursor: pointer;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected {
-    border-right: 3px solid #ea581b;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .icon {
-    background-color: #ea581b;
-    color: #ffffff;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .icon {
-    width: 70px;
-    height: 70px;
-    background-color: #d9d9d9;
-    border-radius: 100%;
-    font-size: 30px;
-    display: inline-block;
-    text-align: center;
-    line-height: 70px;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item
-    .text {
-    color: #616161;
-    margin-left: 45px;
-    font-weight: 500;
-    font-size: 24px;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-list
-    .process-item.selected
-    .text {
-    color: #ea581b;
-  }
-
-  .process-section .process-content .process-container .process-details {
-    width: 70%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details {
-    width: 60%;
-    padding: 0px 70px 0px 90px;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details {
-    width: 40%;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .text-details
-    p {
-    font-size: 20px;
-    line-height: 24px;
-    color: #616161;
-    font-weight: 500;
-  }
-
-  .process-section
-    .process-content
-    .process-container
-    .process-details
-    .image-details
-    img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .process-section .square08 {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .process-section .square09 {
-    display: block;
-    position: absolute;
-    bottom: -60px;
-    right: 0;
-    z-index: 2;
+    line-height: 20px;
   }
 }

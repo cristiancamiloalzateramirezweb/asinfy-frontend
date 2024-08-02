@@ -13,18 +13,10 @@
   padding: 120px 0px;
 }
 
-.reason-section .reason-content .title-decor {
-  text-align: center;
-  display: block;
-  font-size: 20px;
-  color: #ea581b;
-  font-weight: 600;
-}
-
 .reason-section .reason-content h3 {
   text-align: center;
   display: block;
-  font-size: 40px;
+  font-size: 36px;
   color: #313131;
   font-weight: 600;
 }
@@ -33,28 +25,27 @@
   margin-top: 60px;
   display: flex;
   justify-content: center;
-  gap: 35px;
+  gap: 40px;
   align-items: center;
 }
 
 .reason-section .reason-content .card-list .card-item {
-  width: 450px;
-  height: 450px;
+  width: 33.3%;
+  height: 550px;
   padding: 30px;
-  background-color: #f9fafc;
+  background-color: #ffffff;
   box-shadow: 0 0 8px #eeeeee;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .reason-section .reason-content .card-list .card-item img {
   display: block;
   margin: 0px auto 30px;
+  max-width: 100%;
 }
 
 .reason-section .reason-content .card-list .card-item h4 {
   text-align: center;
-  font-size: 22px;
-  line-height: 20px;
   color: #313131;
   font-weight: 500;
   width: 80%;
@@ -65,24 +56,9 @@
   color: #616161;
   font-weight: 400;
   font-size: 16px;
-  text-align: justify;
+  text-align: center;
   display: block;
-  margin-top: 10px;
-}
-
-.reason-section .square04 {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.reason-section .square05 {
-  display: block;
-  position: absolute;
-  bottom: -60px;
-  right: 0;
-  z-index: 2;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -121,7 +97,7 @@
 
   .reason-section .reason-content .card-list .card-item {
     width: 100%;
-    height: 450px;
+    height: 500px;
     padding: 30px;
     background-color: #f9fafc;
     box-shadow: 0 0 8px #eeeeee;
@@ -145,14 +121,6 @@
     text-align: justify;
     display: block;
     margin-top: 10px;
-  }
-
-  .reason-section .square04 {
-    display: none;
-  }
-
-  .reason-section .square05 {
-    display: none;
   }
 }
 
@@ -191,7 +159,7 @@
   }
 
   .reason-section .reason-content .card-list .card-item {
-    width: 47.5%;
+    width: 47%;
     height: 450px;
     padding: 30px;
     background-color: #f9fafc;
@@ -218,14 +186,6 @@
     display: block;
     margin-top: 10px;
   }
-
-  .reason-section .square04 {
-    display: none;
-  }
-
-  .reason-section .square05 {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -234,7 +194,12 @@
   }
 
   .reason-section .reason-content .card-list .card-item h4 {
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .reason-section .reason-content .card-list .card-item {
+    height: 520px;
   }
 }
 
@@ -242,7 +207,18 @@
   .reason-section .reason-content {
     width: 75%;
   }
+
   .reason-section .reason-content .card-list .card-item h4 {
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .reason-section .reason-content .card-list .card-item {
+    width: 100%;
+    height: 550px;
+    padding: 30px;
+    background-color: #f9fafc;
+    box-shadow: 0 0 8px #eeeeee;
+    border-radius: 16px;
   }
 }

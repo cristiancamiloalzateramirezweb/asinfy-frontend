@@ -2,7 +2,6 @@ import React from "react";
 import "./DiscoverSection.css";
 import Check from "../../assets/images/check.svg";
 import Store from "../../assets/images/img-store.svg";
-import Square10 from "../../assets/images/square10.svg";
 
 export const DiscoverSection = () => {
   return (
@@ -35,7 +34,6 @@ export const DiscoverSection = () => {
             </ul>
           </div>
         </div>
-        <img src={Square10} alt="Asincode" className="square10"></img>
       </section>
     </>
   );

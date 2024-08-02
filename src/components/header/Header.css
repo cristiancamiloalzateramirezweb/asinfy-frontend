@@ -24,7 +24,7 @@
 
 .header-main .nav-main .brand-container img {
   display: block;
-  height: 48px;
+  height: 40px;
 }
 
 .header-main .nav-main .navbar-container {
@@ -66,7 +66,7 @@
   color: #ffffff;
   background-color: #ea581b;
   padding: 5px 15px;
-  border-radius: 25px;
+  border-radius: 5px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -149,7 +149,7 @@
   color: #ffffff;
   background-color: #ea581b;
   padding: 5px 15px;
-  border-radius: 25px;
+  border-radius: 5px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -180,6 +180,7 @@
   .header-main .nav-main .navbar-container {
     display: none;
   }
+
   .header-mb .nav-main {
     width: 75%;
   }
@@ -190,6 +191,7 @@
     display: block;
     right: 40px;
   }
+
   .header-mb .nav-button .btn-close {
     right: 40px;
   }
@@ -201,6 +203,7 @@
   .header-main .nav-main .navbar-container {
     display: none;
   }
+
   .header-mb .nav-main {
     width: 50%;
   }
@@ -215,6 +218,7 @@
     margin: 0 0 0 25px;
     list-style: none;
   }
+
   .header-main .nav-main .navbar-container .navbar ul li {
     margin: 0 0 0 25px;
     list-style: none;
@@ -225,10 +229,12 @@
   .header-main .nav-main {
     width: 80%;
   }
+
   .header-main .nav-main .navbar-container .navbar-button ul li {
     margin: 0 0 0 45px;
     list-style: none;
   }
+
   .header-main .nav-main .navbar-container .navbar ul li {
     margin: 0 0 0 45px;
     list-style: none;

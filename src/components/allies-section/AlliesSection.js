@@ -24,11 +24,17 @@ export const AlliesSection = () => {
         },
       },
       {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2,
         },
       },
       {
@@ -43,7 +49,8 @@ export const AlliesSection = () => {
 
   return (
     <>
-      <section className="allies-section">
+      <div className="allies-section">
+        <h2>Han confiado en nosotros</h2>
         <Slider {...settings} className="allies-slider">
           {allies.map((allie, index) => (
             <div key={index} className="allie-slide">
@@ -53,7 +60,7 @@ export const AlliesSection = () => {
             </div>
           ))}
         </Slider>
-      </section>
+      </div>
     </>
   );
 };

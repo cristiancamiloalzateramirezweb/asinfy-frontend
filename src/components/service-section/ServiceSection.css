@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.product-section {
+.service-section {
   width: 100%;
   height: auto;
   position: relative;
   background-color: #eeeeee;
+  border-top: 1px solid #cccccc;
 }
 
-.product-section .product-content {
+.service-section .service-content {
   width: 75%;
   margin: auto;
   height: auto;
@@ -15,7 +16,7 @@
   position: relative;
 }
 
-.product-section .product-content h3 {
+.service-section .service-content h3 {
   text-align: center;
   display: block;
   font-size: 36px;
@@ -23,23 +24,21 @@
   font-weight: 600;
 }
 
-.col-product {
+.col-service {
   padding: 0px 20px;
-  width: 100%;
 }
 
-.product-section .product-content .product-list {
+.service-section .service-content .service-list {
   margin-top: 60px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start !important;
+  justify-content: space-between;
 }
 
-.product-section:hover .product-content .slick-btn {
+.service-section:hover .service-content .slick-btn {
   opacity: 1;
 }
 
-.product-section .product-content .slick-btn {
+.service-section .service-content .slick-btn {
   margin: 0px 25px;
   width: 55px;
   height: 55px;
@@ -50,7 +49,7 @@
   color: #000000;
   border: none;
   position: absolute;
-  top: 55%;
+  top: 52.5%;
   z-index: 4;
   opacity: 0;
   cursor: pointer;
@@ -64,35 +63,35 @@
   right: -120px;
 }
 
-.product-section .product-content .slick-btn:hover {
+.service-section .service-content .slick-btn:hover {
   background-color: #ea581b;
   color: #ffffff;
 }
 
-.product-section .product-content .product-list .product-item {
+.service-section .service-content .service-list .service-item {
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-color: #f9fafc;
   box-shadow: 0 0 8px #eeeeee;
   border-radius: 5px;
   position: relative;
 }
 
-.product-section .product-content .product-list .product-item a {
+.service-section .service-content .service-list .service-item a {
   text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.product-section .product-content .product-list .product-item .enabled {
+.service-section .service-content .service-list .service-item .enabled {
   position: absolute;
   top: 0px;
   right: 0px;
   padding: 5px 15px;
   background-color: #ea581b;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 11px;
   border-radius: 0px 5px 0px 5px;
   font-weight: 600;
 }
@@ -101,12 +100,12 @@
   opacity: 0.5;
 }
 
-.product-section .product-content .product-list .product-item .card-icon {
+.service-section .service-content .service-list .service-item .card-icon {
   width: 100%;
   padding: 30px 0px 15px;
 }
 
-.product-section .product-content .product-list .product-item .card-icon .icon {
+.service-section .service-content .service-list .service-item .card-icon .icon {
   width: 120px;
   height: 120px;
   display: block;
@@ -120,19 +119,19 @@
   color: #ffffff;
 }
 
-.product-section .product-content .product-list .product-item .card-text {
+.service-section .service-content .service-list .service-item .card-text {
   width: 100%;
   padding: 0px 30px 30px 30px;
 }
 
-.product-section .product-content .product-list .product-item .card-text h4 {
+.service-section .service-content .service-list .service-item .card-text h4 {
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: #000000;
 }
 
-.product-section .product-content .product-list .product-item .card-text p {
+.service-section .service-content .service-list .service-item .card-text p {
   font-size: 16px;
   text-align: center;
   margin-top: 15px;
@@ -140,20 +139,20 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .product-section {
+  .service-section {
     width: 100%;
     height: auto;
     position: relative;
   }
 
-  .product-section .product-content {
+  .service-section .service-content {
     width: 98.5% !important;
     margin: auto;
     height: auto;
     padding: 120px 0px 60px 0px;
   }
 
-  .product-section .product-content h3 {
+  .service-section .service-content h3 {
     text-align: center;
     display: block;
     font-size: 28px;
@@ -162,25 +161,25 @@
     font-weight: 600;
   }
 
-  .product-section .product-content .slick-btn {
+  .service-section .service-content .slick-btn {
     display: none;
   }
 
-  .product-section .product-content .product-list {
+  .service-section .service-content .service-list {
     margin-top: 30px;
     display: flex;
   }
 
-  .product-section .product-content .product-list .product-item {
+  .service-section .service-content .service-list .service-item {
     width: 100%;
-    height: 275px;
+    height: 350px;
   }
 
-  .product-section .product-content .product-list .product-item .card-icon {
+  .service-section .service-content .service-list .service-item .card-icon {
     width: 100%;
   }
 
-  .product-section .product-content .product-list .product-item .card-icon .icon {
+  .service-section .service-content .service-list .service-item .card-icon .icon {
     width: 80px;
     height: 80px;
     background-color: #ea581b;
@@ -193,27 +192,27 @@
     color: #ffffff;
   }
 
-  .product-section .product-content .product-list .product-item .card-text {
+  .service-section .service-content .service-list .service-item .card-text {
     width: 100%;
     padding-left: 25px;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .product-section {
+  .service-section {
     width: 100%;
     height: auto;
     position: relative;
   }
 
-  .product-section .product-content {
+  .service-section .service-content {
     width: 95%;
     margin: auto;
     height: auto;
     padding: 120px 0px 60px;
   }
 
-  .product-section .product-content .title-decor {
+  .service-section .service-content .title-decor {
     text-align: center;
     display: block;
     font-size: 20px;
@@ -221,7 +220,7 @@
     font-weight: 600;
   }
 
-  .product-section .product-content h3 {
+  .service-section .service-content h3 {
     text-align: center;
     display: block;
     font-size: 28px;
@@ -230,20 +229,20 @@
     font-weight: 600;
   }
 
-  .product-section .product-content .product-list {
+  .service-section .service-content .service-list {
     margin-top: 30px;
     display: flex;
   }
 
-  .product-section .product-content .product-list .product-item {
+  .service-section .service-content .service-list .service-item {
     width: 100%;
   }
 
-  .product-section .product-content .product-list .product-item .card-icon {
+  .service-section .service-content .service-list .service-item .card-icon {
     width: 100%;
   }
 
-  .product-section .product-content .product-list .product-item .card-icon .icon {
+  .service-section .service-content .service-list .service-item .card-icon .icon {
     width: 80px;
     height: 80px;
     background-color: #ea581b;
@@ -256,28 +255,28 @@
     color: #ffffff;
   }
 
-  .product-section .product-content .product-list .product-item .card-text {
+  .service-section .service-content .service-list .service-item .card-text {
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .product-section .product-content {
+  .service-section .service-content {
     width: 80%;
   }
 
-  .product-section .product-content .product-list .product-item {
+  .service-section .service-content .service-list .service-item {
     width: 100%;
-    height: 340px;
+    height: 350px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .product-section .product-content {
+  .service-section .service-content {
     width: 75%;
   }
 
-  .product-section .product-content .product-list .product-item {
+  .service-section .service-content .service-list .service-item {
     width: 100%;
     height: 340px;
   }

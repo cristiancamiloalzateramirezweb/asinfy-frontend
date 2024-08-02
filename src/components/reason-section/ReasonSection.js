@@ -1,16 +1,13 @@
 import React from "react";
 import "./ReasonSection.css";
-import Square04 from "../../assets/images/square04.svg";
-import Square05 from "../../assets/images/square05.svg";
-import { reasons } from "../../data/reason";
+import { reasons } from "../../data/reasons";
 
 export const ReasonSection = () => {
   return (
     <>
       <section className="reason-section" id="eligenos">
         <div className="reason-content">
-          <span className="title-decor">¿Porqué escogernos?</span>
-          <h3>Razones para elegir Asincode</h3>
+          <h3>¿Por qué elegirnos?</h3>
           <div className="card-list">
             {reasons.map((reason) => {
               return (
@@ -23,8 +20,6 @@ export const ReasonSection = () => {
             })}
           </div>
         </div>
-        <img src={Square04} alt="Asincode" className="square04"></img>
-        <img src={Square05} alt="Asincode" className="square05"></img>
       </section>
     </>
   );

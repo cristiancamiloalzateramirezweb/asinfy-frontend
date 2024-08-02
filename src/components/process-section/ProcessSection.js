@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "./ProcessSection.css";
 import { processes } from "../../data/process";
-import Square08 from "../../assets/images/square08.svg";
-import Square09 from "../../assets/images/square09.svg";
 
 export const ProcessSection = () => {
   const [selectedProcess, setSelectedProcess] = useState(processes[0]);
   const [filter, setFilter] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     setSelectedProcess(processes[0]);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        const newIndex = (prevIndex + 1) % processes.length;
+        setSelectedProcess(processes[newIndex]);
+        return newIndex;
+      });
+    }, 6000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const filteredProcesses = processes.filter((process) =>
@@ -20,8 +31,7 @@ export const ProcessSection = () => {
     <>
       <section className="process-section" id="procesos">
         <div className="process-content">
-          <span className="title-decor">Nuestros Procesos</span>
-          <h3>Los procesos de Asincode</h3>
+          <h3>Nuestros procesos</h3>
           <div className="process-container">
             <div className="process-list">
               {filteredProcesses.map((process) => (
@@ -49,8 +59,6 @@ export const ProcessSection = () => {
             )}
           </div>
         </div>
-        <img src={Square08} alt="Asincode" className="square08"></img>
-        <img src={Square09} alt="Asincode" className="square09"></img>
       </section>
     </>
   );

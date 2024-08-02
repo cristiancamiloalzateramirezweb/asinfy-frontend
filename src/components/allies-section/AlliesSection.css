@@ -1,10 +1,10 @@
 .allies-section {
-  padding: 45px 0px;
-  background-color: #FF7A42;
+  padding: 15px 0px;
+  background-color: #000000;
 }
 
 .allies-slider {
-  margin: 0px auto;
+  margin: auto;
   width: 80%;
 }
 
@@ -27,13 +27,28 @@
 
 .allie-slide a img {
   display: block;
-  max-width: 100%;
+  max-width: 65%;
   height: auto;
+  margin: auto;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .allies-slider {
     margin: 0px auto;
     width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .allies-slider {
+    margin: 0px auto;
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .allies-slider {
+    margin: 0px auto;
+    width: 80%;
   }
 }
