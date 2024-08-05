@@ -88,7 +88,7 @@ footer {
   font-weight: 400;
 }
 
-.footer-main .rowspan .colspan ul li a:hover {
+.footer-main .rowspan .colspan ul li:hover, .footer-main .rowspan .colspan ul li a:hover {
   color: #ea581b;
 }
 
@@ -119,6 +119,7 @@ footer {
   opacity: 0;
   z-index: 10;
   transition: all ease-in-out 300ms;
+  cursor: pointer;
 }
 
 .container-fixed.show {

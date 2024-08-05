@@ -18,7 +18,7 @@ export const ProcessSection = () => {
         setSelectedProcess(processes[newIndex]);
         return newIndex;
       });
-    }, 6000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
